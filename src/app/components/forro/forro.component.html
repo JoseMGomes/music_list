@@ -1,0 +1,16 @@
+<h2>Forro</h2>
+<table class="table table-hover table-striped">
+  <thead>
+    <td>Id</td>
+    <td>Nome</td>
+    <td>Tempo</td>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let forro of forros">
+      <td>{{forro.id}}</td>
+      <td>{{forro.name}}</td>
+      <td>{{forro.time}} Min</td>
+    </tr>
+  </tbody>
+</table>
