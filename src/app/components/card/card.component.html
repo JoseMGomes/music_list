@@ -2,10 +2,16 @@
   <div class="row">
     <div class="col-3">
       <button class="btn p-0" (click)="chargeSertanejo()">
-        <div class="card text-black" [ngClass]="sertanejoColor" style="max-width: 18rem;">
+        <div
+          class="card text-black"
+          [ngClass]="sertanejoColor"
+          style="max-width: 18rem"
+        >
           <div class="card-header">Sertanejo</div>
           <div class="card-body bg-white">
-            <p class="card-text text-dark">Os maiores sucessos do sertanejo atual para você curtir!</p>
+            <p class="card-text text-dark">
+              Os maiores sucessos do sertanejo atual para você curtir!
+            </p>
           </div>
         </div>
       </button>
@@ -13,10 +19,16 @@
 
     <div class="col-3">
       <button class="btn p-0" (click)="chargeFunk()">
-        <div class="card text-black" [ngClass]="funkColor" style="max-width: 18rem;">
+        <div
+          class="card text-black"
+          [ngClass]="funkColor"
+          style="max-width: 18rem"
+        >
           <div class="card-header">Funk</div>
           <div class="card-body bg-white">
-            <p class="card-text text-dark">O melhor do funk para animar qualquer momento</p>
+            <p class="card-text text-dark">
+              O melhor do funk para animar qualquer momento
+            </p>
           </div>
         </div>
       </button>
@@ -24,10 +36,16 @@
 
     <div class="col-3">
       <button class="btn p-0" (click)="chargePagode()">
-        <div class="card text-black" [ngClass]="pagodeColor" style="max-width: 18rem;">
+        <div
+          class="card text-black"
+          [ngClass]="pagodeColor"
+          style="max-width: 18rem"
+        >
           <div class="card-header">Pagode</div>
           <div class="card-body bg-white">
-            <p class="card-text text-dark">Os hits do pagode para momentos leves e felizes para seu dia</p>
+            <p class="card-text text-dark">
+              Os hits do pagode para momentos felizes para seu dia
+            </p>
           </div>
         </div>
       </button>
@@ -35,13 +53,32 @@
 
     <div class="col-3">
       <button class="btn p-0" (click)="chargeForro()">
-        <div class="card text-black" [ngClass]="forroColor" style="max-width: 18rem;">
+        <div
+          class="card text-black"
+          [ngClass]="forroColor"
+          style="max-width: 18rem"
+        >
           <div class="card-header">Forro</div>
           <div class="card-body bg-white">
-            <p class="card-text text-dark">Entre no ritmo contagiante do melhor forró</p>
+            <p class="card-text text-dark">
+              Entre no ritmo contagiante do melhor forró
+            </p>
           </div>
         </div>
       </button>
     </div>
   </div>
+</div>
+
+<div *ngIf="showSertanejo" class="mt-2">
+  <app-sertanejo></app-sertanejo>
+</div>
+<div *ngIf="showFunk" class="mt-2">
+  <app-funk></app-funk>
+</div>
+<div *ngIf="showPagode" class="mt-2">
+  <app-pagode></app-pagode>
+</div>
+<div *ngIf="showForro" class="mt-2">
+  <app-forro></app-forro>
 </div>

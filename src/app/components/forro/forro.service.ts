@@ -1,17 +1,17 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { List } from '../../List';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { List } from '../../List';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ForroService {
-  private url = 'http://localhost:3000/forroDB'
+  private url = 'http://localhost:3000/forroDB';
 
-  constructor(private _httpClient: HttpClient) { }
+  constructor(private _httpClient: HttpClient) {}
 
   getForro(): Observable<List[]> {
-    return this._httpClient.get<List[]>(this.url)
+    return this._httpClient.get<List[]>(this.url);
   }
 }
