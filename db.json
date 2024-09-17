@@ -1,0 +1,26 @@
+{
+  "sertanejoDB": [
+    { "id": 1, "name": "Evidências - Chitãozinho & Xororó", "time": 4.5 },
+    { "id": 2, "name": "Revoada no Colchão - Zé Felipe, Marcynho Sensação", "time": 3.1 },
+    { "id": 3, "name": "Arranhão - Henrique & Juliano", "time": 3.7 },
+    { "id": 4, "name": "Facas - Diego & Victor Hugo, Bruno & Marrone", "time": 4.2 }
+  ],
+  "funkDB": [
+    { "id": 5, "name": "Desenrola Bate Joga de Ladin - Os Hawaianos", "time": 2.9 },
+    { "id": 6, "name": "Vai Sentar no Pai - MC Delano", "time": 3.2 },
+    { "id": 7, "name": "Sextou - MC Don Juan", "time": 3.5 },
+    { "id": 8, "name": "Nosso Quadro - MC Ryan SP", "time": 3.3 }
+  ],
+  "pagodeDB": [
+    { "id": 9, "name": "Cenário - Dilsinho", "time": 3.8 },
+    { "id": 10, "name": "Tá Vendo Aquela Lua - Exaltasamba", "time": 4.1 },
+    { "id": 11, "name": "Sinais - Sorriso Maroto", "time": 3.7 },
+    { "id": 12, "name": "Me Arrependi - Ferrugem", "time": 3.6 }
+  ],
+  "forroDB": [
+    { "id": 13, "name": "Bloqueado - Gusttavo Lima", "time": 3.9 },
+    { "id": 14, "name": "Amor da Despedida - Tarcísio do Acordeon", "time": 4.2 },
+    { "id": 15, "name": "Romance Desapegado - Japinha Conde", "time": 3.7 },
+    { "id": 16, "name": "Balanço da Rede - Matheus Fernandes", "time": 3.8 }
+  ]
+}

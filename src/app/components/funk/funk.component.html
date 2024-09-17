@@ -1,0 +1,16 @@
+<h2>Funk</h2>
+<table class="table table-hover table-striped">
+  <thead>
+    <td>Id</td>
+    <td>Nome</td>
+    <td>Tempo</td>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let funk of funks">
+      <td>{{funk.id}}</td>
+      <td>{{funk.name}}</td>
+      <td>{{funk.time}} Min</td>
+    </tr>
+  </tbody>
+</table>
