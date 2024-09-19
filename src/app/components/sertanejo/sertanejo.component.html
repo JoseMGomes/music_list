@@ -1,17 +1,23 @@
 <h2>Sertanejo</h2>
 <table class="table table-hover table-striped">
   <thead>
-    <td>Id</td>
-    <td>Nome</td>
-    <td>Tempo</td>
+    <tr>
+    <th>Id</th>
+    <th>Nome</th>
+    <th>Tempo</th>
+    <th>Opções</th>
+  </tr>
   </thead>
 
   <tbody>
 
-    <tr *ngFor="let sertanejo of sertanejos">
+    <tr *ngFor="let sertanejo of sertanejos; let i = index">
       <td>{{sertanejo.id}}</td>
       <td>{{sertanejo.name}}</td>
       <td>{{sertanejo.time}} Min</td>
+      <td>
+        <button class="buttonRemove" (click)="removeMusic(i)">Remover</button>
+      </td>
     </tr>
   </tbody>
 </table>

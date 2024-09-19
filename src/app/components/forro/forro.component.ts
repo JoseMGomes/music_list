@@ -22,4 +22,9 @@ export class ForroComponent implements OnInit {
       }
     );
   }
+
+  removeMusic(index: number): void{
+    if (confirm('Tem certeza que deseja remover essa música?'))
+      this.forros.splice(index, 1)
+  }
 }

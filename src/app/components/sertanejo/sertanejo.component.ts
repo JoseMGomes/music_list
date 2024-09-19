@@ -24,4 +24,10 @@ export class SertanejoComponent implements OnInit {
       }
     );
   }
+
+  removeMusic(index: number): void {
+    if (confirm('Tem certeza que deseja remover essa música?')) {
+      this.sertanejos.splice(index, 1);
+    }
+  }
 }

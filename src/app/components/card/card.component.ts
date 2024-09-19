@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
-  styleUrls: ['./card.component.css'], // Certifique-se de que o nome esteja correto
+  styleUrls: ['./card.component.css'],
 })
 export class CardComponent {
   sertanejoColor: string = 'bg-secondary';
@@ -11,7 +11,6 @@ export class CardComponent {
   pagodeColor: string = 'bg-secondary';
   forroColor: string = 'bg-secondary';
 
-  // Variáveis para controlar a exibição das playlists
   showSertanejo: boolean = false;
   showFunk: boolean = false;
   showPagode: boolean = false;
@@ -31,25 +30,25 @@ export class CardComponent {
 
   chargeSertanejo() {
     this.resetColorsAndVisibility();
-    this.sertanejoColor = 'bg-primary text-white';
+    this.sertanejoColor = 'bg-yellow text-black'; // Atualize a cor do texto, se necessário
     this.showSertanejo = true;
   }
 
   chargeFunk() {
     this.resetColorsAndVisibility();
-    this.funkColor = 'bg-primary text-white';
+    this.funkColor = 'bg-yellow text-black';
     this.showFunk = true;
   }
 
   chargePagode() {
     this.resetColorsAndVisibility();
-    this.pagodeColor = 'bg-primary text-white';
+    this.pagodeColor = 'bg-yellow text-black';
     this.showPagode = true;
   }
 
   chargeForro() {
     this.resetColorsAndVisibility();
-    this.forroColor = 'bg-primary text-white';
+    this.forroColor = 'bg-yellow text-black';
     this.showForro = true;
     console.log('Forró ativado');
   }

@@ -1,16 +1,22 @@
 <h2>Forro</h2>
 <table class="table table-hover table-striped">
   <thead>
-    <td>Id</td>
-    <td>Nome</td>
-    <td>Tempo</td>
+    <tr>
+    <th>Id</th>
+    <th>Nome</th>
+    <th>Tempo</th>
+    <th>Opções</th>
+  </tr>
   </thead>
 
   <tbody>
-    <tr *ngFor="let forro of forros">
+    <tr *ngFor="let forro of forros; let i = index">
       <td>{{forro.id}}</td>
       <td>{{forro.name}}</td>
       <td>{{forro.time}} Min</td>
+      <td>
+        <button class="buttonRemove" (click)="removeMusic(i)">Remover</button>
+      </td>
     </tr>
   </tbody>
 </table>

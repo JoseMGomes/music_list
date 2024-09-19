@@ -1,16 +1,22 @@
 <h2>Pagode</h2>
 <table class="table table-hover table-striped">
   <thead>
-    <td>Id</td>
-    <td>Nome</td>
-    <td>Tempo</td>
+    <tr>
+      <th>Id</th>
+      <th>Nome</th>
+      <th>Tempo</th>
+      <th>Opções</th>
+    </tr>
   </thead>
 
   <tbody>
-    <tr *ngFor="let pagode of pagodes">
-      <td>{{pagode.id}}</td>
-      <td>{{pagode.name}}</td>
-      <td>{{pagode.time}} Min</td>
+    <tr *ngFor="let pagode of pagodes; let i = index">
+      <td>{{ pagode.id }}</td>
+      <td>{{ pagode.name }}</td>
+      <td>{{ pagode.time }} Min</td>
+      <td>
+        <button class="buttonRemove" (click)="removeMusic(i)">Remover</button>
+      </td>
     </tr>
   </tbody>
 </table>

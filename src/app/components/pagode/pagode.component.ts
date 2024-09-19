@@ -5,7 +5,7 @@ import { PagodeService } from './pagode.service';
 @Component({
   selector: 'app-pagode',
   templateUrl: './pagode.component.html',
-  styleUrl: './pagode.component.css',
+  styleUrls: ['./pagode.component.css'],
 })
 export class PagodeComponent implements OnInit {
   public pagodes: List[] = [];
@@ -23,5 +23,11 @@ export class PagodeComponent implements OnInit {
         console.error('Erro ao carregar dados', error);
       }
     );
+  }
+
+  removeMusic(index: number): void {
+    if (confirm('Tem certeza que deseja remover essa música?')) {
+      this.pagodes.splice(index, 1);
+    }
   }
 }
